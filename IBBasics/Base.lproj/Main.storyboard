@@ -16,18 +16,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="I'm learning how to make really awesome apps!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YHx-RT-gpA">
-                                <rect key="frame" x="29" y="115" width="356" height="108"/>
+                                <rect key="frame" x="29" y="130" width="356" height="108"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TjQ-eX-X8X">
-                                <rect key="frame" x="188" y="262" width="38" height="30"/>
+                                <rect key="frame" x="188" y="279" width="38" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Press"/>
                                 <connections>
-                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bJi-Jv-xfa"/>
+                                    <action selector="changeTitle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eH9-ZY-bhX"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -35,6 +35,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="mainLabel" destination="YHx-RT-gpA" id="erA-sJ-VgA"/>
                         <outlet property="myButton" destination="TjQ-eX-X8X" id="dba-Dd-zYR"/>
                     </connections>
                 </viewController>
